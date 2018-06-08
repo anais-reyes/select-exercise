@@ -77,7 +77,7 @@ function createCityList() {
 	$('#list').empty();
 	var cities = JSON.parse(localStorage.cities);
 	cities.map(element => {
-		$('#list').append('<p>' + element + '</p>');
+		$('#list').append('<li>' + element + '</li>');
 	});
 }
 
@@ -129,3 +129,4 @@ function myFunction() {
 }
 
 //coment
+//
