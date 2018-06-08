@@ -38,7 +38,6 @@ function printSelect() {
 		generateCities($(this).val());
 	} else {
 		cleanSelect();
-
 		deactivateSelect();
 	}
 }
@@ -110,22 +109,23 @@ function storageCity(cities, city) {
 
 Array.prototype.getDuplicatedValues = function() {
 	var cities = JSON.parse(localStorage.cities);
-	counter = 0;
+	var counter = 0;
 	for (var i = 0; i < this.length; i++) {
 		for (var j = 0; j < i; j++) {
-			if (this[i] === this[j]) {
-				counter = counter + 1;
+			if (i != j && this[i] === this[j]) {
+				counter++;
+				break;
 			}
 		}
 	}
 	return counter;
+	console.log(counter);
 };
 
 function myFunction() {
 	var cities = JSON.parse(localStorage.cities);
 	var total = cities.getDuplicatedValues();
 	$('#duplicated').text(total);
-	console.log('test', total);
 }
 
 //coment
