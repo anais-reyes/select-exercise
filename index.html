@@ -10,11 +10,8 @@
 </head>
 
 <body>
+    <div class="left">
 
-    <div class="container-left">
-        <div id="title">
-            <h2>Select</h2>
-        </div>
         <select name="state-select" id="state-select">
             <option value="default">Selecciona un Estado</option>
             <option value="aguascalientes">Aguascalientes</option>
@@ -27,20 +24,19 @@
             <option value="nayarit">Nayarit</option>
             <option value="puebla">Puebla</option>
             <option value="yucatan">Yucatán</option>
-
         </select>
         <select disabled name="city-select" id="city-select">
             <option value="default">Selecciona un municipio</option>
         </select>
         <button disabled id="add-city">Agregar municipio</button>
-
     </div>
-    <div class="container-rigth">
-        <div id="list">∫
+    <div class="right">
+
+        <div id="list">
         </div>
         <div>
-            <button id="sort-name">Order by name </button>
-            <button id="sort-length">Order by length</button>
+            <button id="sort-name">Ordenar por nombre</button>
+            <button id="sort-length">Ordenar por longitud</button>
         </div>
         <p>Elementos duplicados:
             <span id="duplicated">0</span>

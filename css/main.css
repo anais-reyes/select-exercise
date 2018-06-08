@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-/* box-sizing: border-box;
+* {
+	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; */
-
+	-moz-box-sizing: border-box;
+}
 body {
 	background: #f1f1f2;
 	padding: 0;
 	font-family: 'Roboto', Serif;
 }
 
-.container-left {
-	width: 30%;
+.left {
+	height: 100vh;
+	width: 50%;
 	display: inline-block;
-	/* float: left; */
-	/* margin: auto; */
 	padding: 0px;
 	font-size: 18px;
 	font-weight: bold;
+	border: 1px solid grey;
 }
-.container-right {
+
+.right {
 	display: inline-block;
-	width: 30%;
-	/* float: right; */
-	margin: auto;
-	padding: 10px;
-	font-size: 18px;
-	font-weight: bold;
+	width: 41%;
+	text-align: center;
+}
+
+#list {
+	min-height: 300px;
+	margin-left: 50px;
+	display: initial;
 }
 
 #title {
@@ -46,10 +50,28 @@ header h2 {
 
 select {
 	margin-bottom: 5px;
+	display: block;
 	margin-top: 15px;
-	width: 100%;
+	margin-left: 5%;
+	width: 90%;
 	padding: 15px;
 	border-radius: 5px;
 	border: 1px solid #144b77;
 	font-size: 18px;
+}
+
+button {
+	background: #003366;
+	font-family: 'Roboto', 'serif';
+	font-size: 1em;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	display: block;
+	margin: auto;
+}
+
+button:hover {
+	background: #005ab4;
 }
