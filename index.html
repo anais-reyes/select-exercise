@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <header>
-        <h2>Select</h2>
-    </header>
-    <div class="container">
 
+    <div class="container-left">
+        <div id="title">
+            <h2>Select</h2>
+        </div>
         <select name="state-select" id="state-select">
             <option value="default">Selecciona un Estado</option>
             <option value="aguascalientes">Aguascalientes</option>
@@ -32,7 +32,20 @@
         <select disabled name="city-select" id="city-select">
             <option value="default">Selecciona un municipio</option>
         </select>
+        <button disabled id="add-city">Agregar municipio</button>
+
     </div>
+    <div class="container-rigth">
+        <div id="list">
+
+        </div>
+        <div>
+            <button id="sort-name">Order by name </button>
+            <button id="sort-length">Order by length</button>
+        </div>
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="js/states.js"></script>
