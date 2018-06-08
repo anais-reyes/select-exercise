@@ -12,19 +12,26 @@ body {
 	font-family: 'Roboto', Serif;
 }
 
-.container {
-	border: 1px solid gray;
-	max-width: 600px;
+.container-left {
+	width: 30%;
+	float: left;
+	margin: auto;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.containter-right {
+	width: 30%;
+	float: right;
 	margin: auto;
 	padding: 10px;
 	font-size: 18px;
 	font-weight: bold;
 }
 
-header {
+#title {
 	background-color: #191970;
 	text-align: center;
-	max-width: 600px;
 	color: aliceblue;
 	padding: 10px;
 	margin: auto;
@@ -45,4 +52,8 @@ select {
 	border-radius: 5px;
 	border: 1px solid #144b77;
 	font-size: 18px;
+}
+
+#list {
+	float: right;
 }

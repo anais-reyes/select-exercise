@@ -32,7 +32,7 @@ var states = {
 		'Amatán',
 		'Amatenango de la Frontera',
 		'Amatenango del Valle',
-		'Ángel Albino Corzo',
+		'Angel Albino Corzo',
 		'Arriaga',
 		'Bejucal de Ocampo',
 	],
@@ -51,7 +51,7 @@ var states = {
 	],
 	cdmx: [
 		'CDMX',
-		'Álvaro Obregón',
+		'Alvaro Obregón',
 		'Azcapotzalco',
 		'Benito Juárez',
 		'Coyoacán',
