@@ -127,3 +127,5 @@ function myFunction() {
 	$('#duplicated').text(total);
 	console.log('test', total);
 }
+
+//coment
