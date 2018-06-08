@@ -24,7 +24,19 @@ function sortLength() {
 }
 
 function activateButton() {
-	if ($(this).val() !== 'default') {
+	if (event.target.value !== 'default') {
+		$('#add-city').removeAttr('disabled');
+	} else {
+		$('#add-city').attr('disabled', 'true');
+		verifyButton();
+	}
+}
+function verifyButton() {
+	if (
+		$('#city-select')
+			.find(':selected')
+			.text() === 'Selecciona un municipio'
+	) {
 		$('#add-city').removeAttr('disabled');
 	} else {
 		$('#add-city').attr('disabled', 'true');
@@ -103,11 +115,26 @@ function storageCity(cities, city) {
 	cities.push(city);
 	setLocalStorage(cities);
 	createCityList();
+	myFunction();
 }
 
-// Array.prototype.getDuplicatedValues = function() {
-// 	var i;
-//     for (i = 0; i < this.length; i++) {
-//         this[i] = this[i].toUpperCase();
-//     }
-// };
+Array.prototype.getDuplicatedValues = function() {
+	var cities = JSON.parse(localStorage.cities);
+
+	for (var i = 0; i < this.length; i++) {
+		counter = 0;
+		for (var j = 0; j < i; j++) {
+			if (this[i] === this[j]) {
+				counter = counter + 1;
+			}
+		}
+	}
+	return counter;
+};
+
+function myFunction() {
+	var cities = JSON.parse(localStorage.cities);
+	var total = cities.getDuplicatedValues();
+	$('#duplicated').text(total);
+	console.log('test', total);
+}
