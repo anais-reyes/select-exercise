@@ -1,10 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-* {
-	box-sizing: border-box;
+/* box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-}
+	-moz-box-sizing: border-box; */
 
 body {
 	background: #f1f1f2;
@@ -14,15 +12,17 @@ body {
 
 .container-left {
 	width: 30%;
-	float: left;
-	margin: auto;
-	padding: 10px;
+	display: inline-block;
+	/* float: left; */
+	/* margin: auto; */
+	padding: 0px;
 	font-size: 18px;
 	font-weight: bold;
 }
-.containter-right {
+.container-right {
+	display: inline-block;
 	width: 30%;
-	float: right;
+	/* float: right; */
 	margin: auto;
 	padding: 10px;
 	font-size: 18px;
@@ -52,8 +52,4 @@ select {
 	border-radius: 5px;
 	border: 1px solid #144b77;
 	font-size: 18px;
-}
-
-#list {
-	float: right;
 }
