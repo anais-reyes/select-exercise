@@ -28,27 +28,17 @@ function activateButton() {
 		$('#add-city').removeAttr('disabled');
 	} else {
 		$('#add-city').attr('disabled', 'true');
-		verifyButton();
-	}
-}
-function verifyButton() {
-	if (
-		$('#city-select')
-			.find(':selected')
-			.text() === 'Selecciona un municipio'
-	) {
-		$('#add-city').removeAttr('disabled');
-	} else {
-		$('#add-city').attr('disabled', 'true');
 	}
 }
 
 function printSelect() {
+	$('#add-city').attr('disabled', 'true');
 	activateSelect();
 	if ($(this).val() !== 'default') {
 		generateCities($(this).val());
 	} else {
 		cleanSelect();
+
 		deactivateSelect();
 	}
 }
@@ -120,9 +110,8 @@ function storageCity(cities, city) {
 
 Array.prototype.getDuplicatedValues = function() {
 	var cities = JSON.parse(localStorage.cities);
-
+	counter = 0;
 	for (var i = 0; i < this.length; i++) {
-		counter = 0;
 		for (var j = 0; j < i; j++) {
 			if (this[i] === this[j]) {
 				counter = counter + 1;
