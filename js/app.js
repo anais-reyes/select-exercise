@@ -53,7 +53,7 @@ function generateCities(selectedState) {
 
 function cleanSelect() {
 	$('#city-select').empty();
-	$('#city-select').append('<option value="default">' + 'Selecciona un municipio' + '</option>');
+	$('#city-select').append('<option  value="default">' + 'Selecciona un municipio' + '</option>');
 }
 
 function activateSelect() {
@@ -77,7 +77,7 @@ function createCityList() {
 	$('#list').empty();
 	var cities = JSON.parse(localStorage.cities);
 	cities.map(element => {
-		$('#list').append('<li>' + element + '</li>');
+		$('#list').append('<li class="city">' + element + '</li>');
 	});
 }
 
@@ -127,6 +127,3 @@ function myFunction() {
 	var total = cities.getDuplicatedValues();
 	$('#duplicated').text(total);
 }
-
-//coment
-//
