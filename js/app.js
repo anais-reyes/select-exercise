@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$('#add-city').click(addCity);
 	$('#sort-name').click(sortName);
 	$('#sort-length').click(sortLength);
+	paintStates();
 	createCityList();
 });
 function sortName() {
@@ -12,6 +13,12 @@ function sortName() {
 	cities = cities.sort();
 	setLocalStorage(cities);
 	createCityList();
+}
+
+function paintStates() {
+	Object.keys(states).forEach((element, index) => {
+		$('#state-select').append('<option value="' + element + '">' + element + '</option>');
+	});
 }
 
 function sortLength() {
@@ -25,14 +32,22 @@ function sortLength() {
 
 function activateButton() {
 	if (event.target.value !== 'default') {
-		$('#add-city').removeAttr('disabled');
+		activateAddCity();
 	} else {
-		$('#add-city').attr('disabled', 'true');
+		deactivateAddCity();
 	}
 }
 
-function printSelect() {
+function activateAddCity() {
+	$('#add-city').removeAttr('disabled');
+}
+
+function deactivateAddCity() {
 	$('#add-city').attr('disabled', 'true');
+}
+
+function printSelect() {
+	deactivateAddCity();
 	activateSelect();
 	if ($(this).val() !== 'default') {
 		generateCities($(this).val());
@@ -62,7 +77,7 @@ function activateSelect() {
 
 function deactivateSelect() {
 	$('#city-select').attr('disabled', true);
-	$('#add-city').attr('disabled', true);
+	deactivateAddCity();
 }
 
 function addCity(event) {

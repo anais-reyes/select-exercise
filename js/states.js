@@ -1,5 +1,5 @@
 var states = {
-	aguascalientes: [
+	Aguascalientes: [
 		'Aguascalientes',
 		'Asientos',
 		'Calvillo',
@@ -11,7 +11,7 @@ var states = {
 		'Tepezalá',
 		'El Llano',
 	],
-	campeche: [
+	Campeche: [
 		'Calkiní',
 		'Campeche',
 		'Carmen',
@@ -23,7 +23,7 @@ var states = {
 		'Escárcega',
 		'Calakmul',
 	],
-	chiapas: [
+	Chiapas: [
 		'Chiapas',
 		'Acacoyagua',
 		'Acala',
@@ -36,7 +36,7 @@ var states = {
 		'Arriaga',
 		'Bejucal de Ocampo',
 	],
-	chihuahua: [
+	Chihuahua: [
 		'Chihuahua',
 		'Ahumada',
 		'Aldama',
@@ -49,7 +49,7 @@ var states = {
 		'Bacoyna',
 		'Buenaventura',
 	],
-	cdmx: [
+	CDMX: [
 		'CDMX',
 		'Alvaro Obregón',
 		'Azcapotzalco',
@@ -62,7 +62,7 @@ var states = {
 		'Iztapalapa',
 		'Magdalena Contreras',
 	],
-	hidalgo: [
+	Hidalgo: [
 		'Hidalgo',
 		'Acatlán',
 		'Acaxochitlán',
@@ -75,7 +75,7 @@ var states = {
 		'El Arenal',
 		'Atitalaquia',
 	],
-	jalisco: [
+	Jalisco: [
 		'Jalisco',
 		'Acatic',
 		'Acatlán de Juárez',
@@ -88,7 +88,7 @@ var states = {
 		'Atemajac de Brizuela',
 		'Atnego',
 	],
-	nayarit: [
+	Nayarit: [
 		'Nayarit',
 		'Acaponeta',
 		'Ahuacatlán',
@@ -101,7 +101,7 @@ var states = {
 		'Del Nayar',
 		'Rosamorada',
 	],
-	puebla: [
+	Puebla: [
 		'Puebla',
 		'Acajete',
 		'Acateno',
@@ -114,7 +114,7 @@ var states = {
 		'Ahuehuetitla',
 		'Ajalpa',
 	],
-	yucatan: [
+	Yucatán: [
 		'Yucatán',
 		'Abalá',
 		'Acanceh',
